@@ -1,0 +1,66 @@
+/* Modo oscuro (Ejercicio 2.d)
+   Se activa agregando la clase "dark-mode" al <body> (ver index.html, botón #darkModeToggle).
+   Las cajas de color (statbox, widget blue/green/red/yellow, etc.) no se tocan a propósito:
+   ya tienen fondo de color propio y texto blanco, se ven igual en los dos modos. */
+
+body.dark-mode {
+	background: #1a1d21;
+	color: #ccc;
+}
+
+body.dark-mode #content {
+	background: #23262b;
+}
+
+body.dark-mode .breadcrumb {
+	background-color: #2c2f36;
+	color: #ccc;
+}
+
+body.dark-mode .breadcrumb .divider,
+body.dark-mode .breadcrumb li {
+	color: #aaa;
+}
+
+body.dark-mode .box {
+	background: #2c2f36 !important;
+	border-color: #3a3d44;
+}
+
+body.dark-mode .box-header {
+	background: #23262b;
+}
+
+body.dark-mode .box-content {
+	background: #2c2f36 !important;
+	color: #ccc;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+	color: #eee;
+}
+
+body.dark-mode a {
+	color: #6cb2eb;
+}
+
+body.dark-mode .dashboard-list li,
+body.dark-mode .todo.metro li {
+	background: #2c2f36;
+	border-color: #3a3d44;
+	color: #ccc;
+}
+
+body.dark-mode table {
+	color: #ccc;
+}
+
+body.dark-mode #polygonStatus,
+body.dark-mode #geoStatus {
+	color: #ccc;
+}

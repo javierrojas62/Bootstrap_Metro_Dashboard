@@ -1,0 +1,62 @@
+/* Estética "moderna": el template original (Metro/Windows 8) usa esquinas
+   100% cuadradas a propósito (ver los "border-radius: 0px !important" en
+   css/style.css). Este archivo redondea los componentes principales y les
+   suma una sombra suave, sin tocar el layout ni los colores de marca. */
+
+.widget,
+.box,
+.statbox,
+.circleStatsItemBox,
+.quick-button.metro,
+#myModal,
+.dropdown-menu,
+.taskProgress {
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.widget,
+.box,
+.statbox,
+.circleStatsItemBox,
+.quick-button.metro {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.box-header {
+	border-radius: 6px 6px 0 0;
+}
+
+.btn,
+.btn-navbar,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+textarea,
+select,
+.uneditable-input {
+	border-radius: 6px !important;
+}
+
+.select2-container .select2-selection,
+.select2-container--default .select2-selection--single {
+	border-radius: 6px !important;
+}
+
+.jconfirm .jconfirm-box {
+	border-radius: 10px !important;
+}
+
+#toast-container > div {
+	border-radius: 6px !important;
+}
+
+/* Las barras de sparkline/candlestick quedan mejor con las puntas redondeadas */
+.verticalChart .singleBar .bar {
+	border-radius: 4px 4px 0 0;
+	overflow: hidden;
+}
+
+/* El sidebar y el header de arriba se mantienen a ancho completo (sin
+   redondear), es lo esperable en un layout de dashboard tipo app. */
